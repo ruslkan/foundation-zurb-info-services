@@ -19,8 +19,8 @@ $(document).foundation();
 
 // Popup Back Call
 var $popupBackCall = new Foundation.Reveal($('#popupBackCall'), {
-    animationIn: "spin-in",
-    animationOut: "spin-out"
+    animationIn: "scale-in-up",
+    animationOut: "scale-out-down"
   });
  
 // Callback popup validator

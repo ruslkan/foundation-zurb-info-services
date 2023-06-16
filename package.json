@@ -1,17 +1,17 @@
 {
-  "name": "foundation-zurb-template",
+  "name": "info-services",
   "version": "1.0.0",
-  "description": "Official Template for Foundation for Sites.",
+  "description": "Template for Foundation for Sites info services",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "deploy": "gulp build && gh-pages -d dist"
   },
-  "author": "Foundation Yetinauts <contact@get.foundation> (https://get.foundation)",
+  "author": "Ruslan Kanashuk <ruslan.kanashuk@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "latest",
-    "gh-pages": "^5.0.0",
     "jquery": "^3.6.0",
     "motion-ui": "latest",
     "what-input": "^5.2.10"
@@ -24,6 +24,7 @@
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",
     "fs": "^0.0.1-security",
+    "gh-pages": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -53,11 +54,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-zurb-template.git"
+    "url": "git@github.com:ruslkan/foundation-zurb-info-services.git"
   },
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
-    "email": "foundation@zurb.com"
+    "url": "git@github.com:ruslkan/foundation-zurb-info-services/issues",
+    "email": "ruslan.kanashuk@gmail.com"
   },
   "private": true,
   "browserslist": [

@@ -4,11 +4,13 @@
 .button-primary {
   font-size: rem-calc(16px);
   @include font-bold($weight:600);
-  color: $text-color-primary;
-  background-color: $brand-color;
+  @include button-style(
+    $background: $brand-color,
+    $background-hover: $brand-color-light,
+    $color: $text-color-primary
+  );
 
   &:hover {
-    background-color: $brand-color-light;
-    filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
-  }  
+    filter:drop-shadow(0.15rem 0.15rem 0.6rem $brand-color),
+  }
 }

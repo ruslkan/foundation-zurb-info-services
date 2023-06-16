@@ -1,6 +1,8 @@
 /* =======
    LAYOUTS
    ======= */
+$pageWidth: 1920px;
+
 body {
   background-color: scale-color($bg-color, $lightness:-20%);
   overflow-x: hidden;
@@ -27,4 +29,23 @@ h4,
 h5,
 h6 {
   font-family: $font-primary;
+}
+
+.page {
+  max-width: $pageWidth;
+  margin: 0 auto;
+
+  &__container {
+    @include xy-grid-container;
+  }
+
+  &__content-container {
+    @include xy-grid-container(
+      $padding: 0
+    );
+  }
+
+  &__hero {
+    height: 100vh;
+  }
 }
