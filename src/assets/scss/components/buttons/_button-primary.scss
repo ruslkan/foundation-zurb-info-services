@@ -1,0 +1,14 @@
+//* --------------
+//  button-primary
+//  -------------- */
+.button-primary {
+  font-size: rem-calc(16px);
+  @include font-bold($weight:600);
+  color: $text-color-primary;
+  background-color: $brand-color;
+
+  &:hover {
+    background-color: $brand-color-light;
+    filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
+  }  
+}

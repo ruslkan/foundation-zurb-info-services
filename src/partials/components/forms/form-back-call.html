@@ -1,0 +1,17 @@
+<!-- ======= Form Back Call ======= -->
+<form class="form-back-call" data-abide novalidate>
+
+  <input type="text" class="form-back-call__input" placeholder="Как вас зовут?">
+  
+  <input type="tel" class="form-back-call__input" placeholder="+375(код)111-22-33">
+  
+  <fieldset class="form-back-call__chek">
+    <input id="personData" type="radio" name="person" value="personData">
+    <label for="personData">Согласие на обработку персональных данных</label>
+  </fieldset>
+
+  <fieldset class="form-back-call__button">
+    {{> button-popup-back-call}}
+  </fieldset>
+  
+</form><!-- ======= End Form Back Call ======= -->

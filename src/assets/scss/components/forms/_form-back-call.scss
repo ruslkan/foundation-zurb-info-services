@@ -1,0 +1,64 @@
+/* ==============
+   FORM BACK CALL
+================= */
+// Variables
+$input-background-focus: none;
+$input-border: 1px solid $text-color-secondary;
+$input-border-focus: 2px solid $text-color-secondary;
+
+.form-back-call {
+
+  &__label {
+    color: $text-color-secondary;
+    font-size: rem-calc(12px);
+  }
+
+  &__input {
+    outline: none !important;
+    height: 55px;
+    border: $input-border;
+    border-radius: 5px;
+    padding: 0 15px;
+    font-size: rem-calc(18);
+    background: none;
+    color: $text-color-secondary;
+
+    &:focus {
+      background: $input-background-focus;
+      border: $input-border-focus;
+    }
+
+    &::placeholder {
+      font-size: rem-calc(16);
+      color: $text-color-secondary;
+    }
+  }
+
+  &__chek {
+    @include xy-grid;
+
+    label {
+      @include font-italic;
+      color: $text-color-secondary;
+      font-size: rem-calc(12);
+
+    }
+  }
+
+  &__error {
+    font-size: rem-calc(14px);
+    color: #cc4b37;
+  }
+
+  .is-invalid-input {
+    background: none;
+  }
+
+  input[type='radio'] {
+    margin: 0;
+  }
+
+  &__button {
+    margin-top: 1em;
+  }
+}

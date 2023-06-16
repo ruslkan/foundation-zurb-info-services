@@ -1,0 +1,30 @@
+/* =======
+   LAYOUTS
+   ======= */
+body {
+  background-color: scale-color($bg-color, $lightness:-20%);
+  overflow-x: hidden;
+  height: auto;
+  background-image: none;
+  min-height: 100%;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: $brand-color;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}

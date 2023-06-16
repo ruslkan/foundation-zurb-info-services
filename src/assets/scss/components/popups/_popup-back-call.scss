@@ -1,0 +1,35 @@
+//* ---------------
+//  popup-back-call
+//  --------------- */
+.popup-back-call {
+  box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+  color: $text-color-primary;
+  text-align: center;
+  background: url(../img/bg/formmaster-bg.png) no-repeat center center;
+  background-size: cover;
+  //background-color: darken($brand-color-lighter, 35%);
+  filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
+  border-radius: 10px;
+  padding: 42px 27px 40px 27px;
+
+  &__title {
+    @include font-bold($weight: 800);
+    @include text-transform(uppercase);
+    color: $text-color-primary;
+    font-size: rem-calc(22);
+    font-family: $font-popup-primary;
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    @include font-bold($weight: 500);
+    font-family: $font-popup-secondary;
+    line-height: 18px;
+    @include font-wide(
+      $letter-spacing: 1px
+    );
+    color: $text-color-secondary;
+    padding: 0.3rem 0 0.9rem 0;
+    font-size: rem-calc(14);
+  }
+} 

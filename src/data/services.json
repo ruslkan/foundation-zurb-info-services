@@ -1,0 +1,24 @@
+{
+	"service": [
+		{
+			"icon": "assets/img/icons/services/Smart-TV-3D.svg",
+			"title": "Телевизоры"
+		},
+		{
+			"icon": "assets/img/icons/services/Monitor-3.svg",
+    	"title": "Мониторы"
+		},
+		{
+			"icon": "assets/img/icons/services/Laptop-2.svg",
+    	"title": "Ноутбуки"
+		},
+		{
+			"icon": "assets/img/icons/services/Print.svg",
+    	"title": "Принтеры"
+		},
+		{
+			"icon": "assets/img/icons/services/Smartphone-1.svg",
+    	"title": "Смартфоны"
+		}
+	]
+}

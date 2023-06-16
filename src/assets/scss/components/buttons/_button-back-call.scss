@@ -1,0 +1,18 @@
+//* ----------------
+//  button-back-call
+//  ---------------- */
+.button-back-call {
+  @include bordered(
+    $width:3px,
+    $type:solid,
+    $color:$text-color-primary
+  );
+  @include border-radius(
+    $radius:15px
+  );
+
+  &__icon {
+    width: 10px;
+    fill: $text-color-primary;
+  }
+}

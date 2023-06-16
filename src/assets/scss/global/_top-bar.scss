@@ -1,0 +1,25 @@
+/* =======
+   TOP BAR
+   ======= */
+.top-bar {
+	@include xy-grid;
+	background: none;
+
+	&__icon-hamburger {
+		@include xy-cell-size(
+			$size: 15%
+			);
+	}
+
+	&__contact-phone {
+		@include xy-cell-base(auto);
+		@include flex;
+		@include flex-align(
+			$x: center,
+			$y: null);
+	}
+
+	&__button-back-call {
+		@include xy-cell-base(shrink);
+	}
+}

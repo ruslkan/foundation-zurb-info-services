@@ -1,0 +1,7 @@
+<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.2429 1.00005L2.0744 11" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1.9054 1.94473L10.2429 1.00005L11.7733 8.3887" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+@include hamburger($color, $color-hover, $width, $height, $weight, $bars);
+ <img class="icon__img" src="{{root}}assets/img/icons/hamberger-menu.svg" alt="Hamburger">

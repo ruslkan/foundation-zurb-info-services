@@ -1,0 +1,43 @@
+//* ------------
+//  icon-service
+//  ------------ */
+.icon-service {
+  @include flex;
+  @include flex-direction(
+    $direction: column,
+  );
+  @include flex-align(
+    $x: center,
+    $y: middle,
+  );
+  color: $text-color-secondary;
+
+  &__text {
+    font-size: rem-calc(14px);
+    @include font-bold(
+      $weight:600
+    );
+    text-align: center;
+  }
+
+  .badge {
+  background-color: $brand-color;
+  @include bordered(
+    $width: 3px,
+    $type: solid,
+    $color: $text-color-primary,
+  );
+  padding: 0.7em;
+
+    &:hover {
+      background-color: $brand-color-light;
+      cursor: pointer;
+      filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
+    }
+
+    &__img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

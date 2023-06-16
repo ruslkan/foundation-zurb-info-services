@@ -1,0 +1,50 @@
+//* -------------
+//  contact-phone
+//  ------------- */
+.contact-phone {
+	@include flex;
+
+	ul {
+		background: none;
+	}
+	
+	&__icon {
+		width: 25px;
+    height: 30px;
+    fill: $text-color-primary;
+    @include xy-cell-base(shrink);
+    @include flex-align-self(middle);
+
+    &:hover {
+    	fill: $brand-color-lighter;
+    	filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
+    }
+	}
+
+	&__list {
+		@include xy-cell-base(shrink);
+		margin-bottom: 0;
+		margin-left: 5px;
+		list-style: none;
+		background: none;
+	}
+
+	&__link {
+		font-size: rem-calc(22px);
+		@include font-bold($weight:600);
+		color: $text-color-primary;
+
+		&:hover {
+			color: $brand-color-lighter;
+			filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
+		}
+	}
+
+	&__code {
+		@include font-italic;
+	}
+
+	&__tel {
+		@include font-bold($weight:800);
+	}
+}
