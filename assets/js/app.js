@@ -20719,8 +20719,8 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).foundation();
 
 // Popup Back Call
 var $popupBackCall = new Foundation.Reveal(jquery__WEBPACK_IMPORTED_MODULE_0___default()('#popupBackCall'), {
-  animationIn: "spin-in",
-  animationOut: "spin-out"
+  animationIn: "scale-in-up",
+  animationOut: "scale-out-down"
 });
 
 // Callback popup validator
