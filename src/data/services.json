@@ -2,23 +2,23 @@
 	"service": [
 		{
 			"icon": "assets/img/icons/services/Smart-TV-3D.svg",
-			"title": "Телевизоры"
+			"title": "Телевизор"
 		},
 		{
 			"icon": "assets/img/icons/services/Monitor-3.svg",
-    	"title": "Мониторы"
+    	"title": "Монитор"
 		},
 		{
 			"icon": "assets/img/icons/services/Laptop-2.svg",
-    	"title": "Ноутбуки"
+    	"title": "Ноутбук"
 		},
 		{
 			"icon": "assets/img/icons/services/Print.svg",
-    	"title": "Принтеры"
+    	"title": "Принтер"
 		},
 		{
 			"icon": "assets/img/icons/services/Smartphone-1.svg",
-    	"title": "Смартфоны"
+    	"title": "Смартфон"
 		}
 	]
 }

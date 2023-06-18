@@ -10,6 +10,9 @@
     $x: center,
     $y: middle,
   );
+  @include xy-gutters(
+    $gutter-position: left
+  );
   color: $text-color-secondary;
 
   &__text {

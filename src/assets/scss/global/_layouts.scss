@@ -45,7 +45,14 @@ h6 {
     );
   }
 
-  &__hero {
-    height: 100vh;
+  &__header {
+    @include position(
+      $position: absolute,
+      $top: 0,
+      $right: 0,
+      $left: 0,
+    );
+    z-index: 997;
+    width: 100%;
   }
 }

@@ -2,13 +2,7 @@
    HEADER
    ====== */
 .header {
-	transition: all 0.5s;
-	position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-	z-index: 997;
-
+	
 	&__top-bar {
 		@include xy-grid-container;
 		padding: 20px 0;
