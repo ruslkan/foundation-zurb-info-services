@@ -1,0 +1,23 @@
+<!-- ======= Service Item Table ======= -->
+<table class="table-expand unstriped">
+  <thead>
+    <tr>
+      <th>Неисправность</th>
+      <th>Возможная причина</th>
+      <th>Примечание</th>
+      <th>Цена</th>
+      <th>Заказ</th>
+    </tr>
+  </thead>
+  <tbody>
+  	{{#each services-tv.item}}
+    <tr>
+      <td data-label="Неисправность">{{ name }}</td>
+      <td data-label="Возможная причина">{{ cause }}</td>
+      <td data-label="Примечание">{{ note }}</td>
+      <td data-label="Цена">{{ price }}</td>
+      <td data-label="Заказ" data-open="popupBackCall">{{> button-back-call-table}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table><!-- ======= End Service Item Table ======= -->

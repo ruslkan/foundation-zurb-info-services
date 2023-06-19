@@ -1,0 +1,16 @@
+/* ======
+   FOOTER
+   ====== */
+.footer {
+  @include xy-grid;
+  background: url(../img/bg/formmaster-bg.png) center center;
+  background-size: cover;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    font-size: rem-calc(10px);
+    margin-bottom: 0;
+  }
+}

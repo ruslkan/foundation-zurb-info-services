@@ -1,0 +1,78 @@
+/* ==================
+   TABLE SERVICE ITEM
+   ================== */
+$table-expand-bottom-gap: 1.5rem;
+$table-expand-border: 2px solid $brand-color;
+$table-expand-stack-point: 640px;
+$table-expand-label-bg: $light-gray;
+
+.table-expand {
+  border-collapse: collapse;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  &.unstriped tbody {
+    background-color: transparent;
+  }
+
+  th {
+    background-color: $table-expand-label-bg;
+    text-align: center;
+  }
+
+  tr,
+  th,
+  td {
+    border: $table-expand-border;
+  }
+
+  @media screen and (max-width: $table-expand-stack-point) {
+    thead tr {
+      position: absolute;
+      top: -9999em;
+      left: -9999em;
+    }
+
+    tr {
+      border: $table-expand-border;
+      display: block;
+    }
+
+    tr + tr {
+      margin-top: $table-expand-bottom-gap;
+    }
+    /* Get table cells to act like rows */
+
+    td {
+      border: none;
+      @include xy-grid;
+      justify-content: flex-start;
+      align-items: center;
+      border-bottom: $table-expand-border;
+      padding-left: 50%;
+      position: relative;
+
+      &:before {
+        content: attr(data-label);
+        display: inline-block;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-left: -100%;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: $table-expand-label-bg;
+        width: 45%;
+        height: 95%;
+        left: 1px;
+        top: 1px;
+        z-index: 0;
+      }
+    }
+  }
+}

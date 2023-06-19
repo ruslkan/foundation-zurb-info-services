@@ -96,7 +96,7 @@
 		@include breakpoint(large, xlarge up) {
 			font-size: rem-calc(22);
 		}
-		padding-top: 35px;
+		//padding-top: 35px;
 		@include font-bold(
 			$weight: 600
 		);
