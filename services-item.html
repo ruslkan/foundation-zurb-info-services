@@ -7,155 +7,183 @@
     <title>Foundation for My Sites</title>
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-<body>
-  <div class="page">
-    <div class="page__header">
-      <!-- ======= Header ======= -->
-      <header id="header" class="header">
-        <div class="header__top-bar">
-          <!-- ======= Top Bar ======= -->
-          <div class="top-bar">
-            <div class="top-bar__icon-hamburger">
-              <!-- ======= Icon Hamburger ======= -->
-              <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 22">
-                <line x1="1" y1="1" x2="23.0821" y2="0.999999" stroke-linecap="round"/>
-                <line x1="1" y1="11" x2="39.1368" y2="11" stroke-linecap="round"/>
-                <line x1="1" y1="21" x2="31.1094" y2="21" stroke-linecap="round"/>
-              </svg><!-- ======= End Icon Hamburger ======= -->  </div>
-            <div class="top-bar__contact-phone">
-              <!-- ======= Contact Phone ======= -->
-              <div class="contact-phone">
-                <svg class="contact-phone__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
-                  <path d="M6.48606 14.6667C2.56148 11.4396 0.747729 8.46774 0.193327 7.43974C0.0591633 7.19097 0 6.91269 0 6.63004V4.47417C0 3.87602 0.267724 3.30927 0.72974 2.92936L3.02199 1.0445C3.76008 0.437585 4.82441 0.437585 5.56251 1.04451L8.48107 3.44437C9.33008 4.14249 9.4566 5.39492 8.76436 6.24873L8.04121 7.14068C7.50899 7.79713 7.44509 8.71885 7.93732 9.4058C8.48372 10.1684 9.24948 11.135 10.0152 11.7647C10.9432 12.5278 12.4731 13.2908 13.4337 13.7329C13.9827 13.9855 14.6155 13.9488 15.1455 13.6583L17.4132 12.4151C18.1299 12.0223 19.0136 12.105 19.6449 12.6241L22.444 14.9258C23.417 15.7258 23.417 17.2153 22.444 18.0154L20.5841 19.5448C20.2261 19.8391 19.7772 20 19.3138 20H16.0354C15.8384 20 15.6444 19.9716 15.4584 19.9066C14.4187 19.5429 10.625 18.07 6.48606 14.6667Z"/>
-                </svg>
-                <ul class="contact-phone__list">
-                  <li class="contact-phone__item">
-                    <a class="contact-phone__link" href="tel:+375 (29) 000-00-00">
-                    +375 (29) 000-00-00</a>
-                  </li>
-                </ul>
-              </div><!-- ======= End Contact Phone ======= -->
+<body class="page">
+
+  <!-- ======= Page Off-canvas wrap ======= -->
+  <div class="page__off-canvas">
+    
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+      <!-- ======= Button Close ======= -->
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span class="close-button__icon" aria-hidden="true">&times;</span>
+      </button><!-- ======= End Button Close ======= -->      <!-- ======= Navigation ======= -->
+      <nav class="navi">
+        <ul class="vertical menu navi__list">
+          <li class="navi__item">
+            <a class="navi__link" href="#">О нас</a>
+          </li>
+          <li class="navi__item">
+            <a class="navi__link" href="#">Опять о нас</a>
+          </li>
+          <li class="navi__item">
+            <a class="navi__link" href="#">Снова о нас</a>
+          </li>
+          <li class="navi__item">
+            <a class="navi__link" href="#">Четвертый раз о нас</a>
+          </li>
+        </ul>
+      </nav><!-- ======= End Navigation ======= -->    </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="page__header">
+        <!-- ======= Header ======= -->
+        <header id="header" class="header">
+          <div class="header__top-bar">
+            <!-- ======= Top Bar ======= -->
+            <div class="top-bar">
+              <div class="top-bar__icon-hamburger" data-open="offCanvasLeft">
+                <!-- ======= Icon Hamburger ======= -->
+                <svg class="icon-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 22">
+                  <line x1="1" y1="1" x2="23.0821" y2="0.999999" stroke-linecap="round"/>
+                  <line x1="1" y1="11" x2="39.1368" y2="11" stroke-linecap="round"/>
+                  <line x1="1" y1="21" x2="31.1094" y2="21" stroke-linecap="round"/>
+                </svg><!-- ======= End Icon Hamburger ======= -->  </div>
+              <div class="top-bar__contact-phone">
+                <!-- ======= Contact Phone ======= -->
+                <div class="contact-phone">
+                  <svg class="contact-phone__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
+                    <path d="M6.48606 14.6667C2.56148 11.4396 0.747729 8.46774 0.193327 7.43974C0.0591633 7.19097 0 6.91269 0 6.63004V4.47417C0 3.87602 0.267724 3.30927 0.72974 2.92936L3.02199 1.0445C3.76008 0.437585 4.82441 0.437585 5.56251 1.04451L8.48107 3.44437C9.33008 4.14249 9.4566 5.39492 8.76436 6.24873L8.04121 7.14068C7.50899 7.79713 7.44509 8.71885 7.93732 9.4058C8.48372 10.1684 9.24948 11.135 10.0152 11.7647C10.9432 12.5278 12.4731 13.2908 13.4337 13.7329C13.9827 13.9855 14.6155 13.9488 15.1455 13.6583L17.4132 12.4151C18.1299 12.0223 19.0136 12.105 19.6449 12.6241L22.444 14.9258C23.417 15.7258 23.417 17.2153 22.444 18.0154L20.5841 19.5448C20.2261 19.8391 19.7772 20 19.3138 20H16.0354C15.8384 20 15.6444 19.9716 15.4584 19.9066C14.4187 19.5429 10.625 18.07 6.48606 14.6667Z"/>
+                  </svg>
+                  <ul class="contact-phone__list">
+                    <li class="contact-phone__item">
+                      <a class="contact-phone__link" href="tel:+375 (29) 000-00-00">
+                      +375 (29) 000-00-00</a>
+                    </li>
+                  </ul>
+                </div><!-- ======= End Contact Phone ======= -->
+              </div>
+              <div class="top-bar__button-back-call" data-open="popupBackCall">
+                <!-- ======= Button Back Call ======= -->
+                <a href="#" class="button button-primary button-back-call">Перезвонить Вам?
+                </a><!-- ======= End Button Back Call ======= -->  </div>
+            </div><!-- ======= End Top Bar ======= -->  </div>
+        </header><!-- ======= End Header ======= -->      </div>
+         
+        <!-- ======= Popup Back Call ======= -->
+        <div id="popupBackCall" class="tiny reveal popup-back-call">
+          <div class="popup-back-call__title">Заполните форму</div>
+          <div class="popup-back-call__desc">и Вам перезвонят в<br> течение 15-45 минут</div>
+          <!-- ======= Form Back Call ======= -->
+          <form class="form-back-call" data-abide novalidate>
+          
+            <input type="text" class="form-back-call__input" placeholder="Как вас зовут?">
+            
+            <input type="tel" class="form-back-call__input" placeholder="+375 (код) 111-22-33">
+            
+            <fieldset class="form-back-call__chek">
+              <input id="personData" type="radio" name="person" value="personData">
+              <label for="personData">Согласие на обработку персональных данных</label>
+            </fieldset>
+          
+            <fieldset class="form-back-call__button">
+              <!-- ======= Button Popup Back Call ======= -->
+              <button type="submit" value="Submit" class="button button-primary button-back-call">Заказать звонок
+              </button><!-- ======= End Button Popup Back Call ======= -->  </fieldset>
+            
+          </form><!-- ======= End Form Back Call ======= -->  <!-- ======= Button Close ======= -->
+          <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span class="close-button__icon" aria-hidden="true">&times;</span>
+          </button><!-- ======= End Button Close ======= --></div><!-- End Popup Back Call -->  <!-- ======= Hero Section ======= -->
+        <section id="hero" class="hero">
+          <div class="hero__offer">
+            <div class="offer">
+              <h2 class="offer__title">Ремонт телевизоров в Ивацевичах</h2>
+              <p class="offer__desc">Решите свою проблему не выходя из дома!</p>
             </div>
-            <div class="top-bar__button-back-call" data-open="popupBackCall">
-              <!-- ======= Button Back Call ======= -->
-              <a href="#" class="button button-primary button-back-call">Перезвонить Вам?
-              </a><!-- ======= End Button Back Call ======= -->  </div>
-          </div><!-- ======= End Top Bar ======= -->  </div>
-      </header><!-- ======= End Header ======= -->    </div>
-       
-      <!-- ======= Popup Back Call ======= -->
-      <div id="popupBackCall" class="tiny reveal popup-back-call">
-        <div class="popup-back-call__title">Заполните форму</div>
-        <div class="popup-back-call__desc">и Вам перезвонят в<br> течение 15-45 минут</div>
-        <!-- ======= Form Back Call ======= -->
-        <form class="form-back-call" data-abide novalidate>
-        
-          <input type="text" class="form-back-call__input" placeholder="Как вас зовут?">
-          
-          <input type="tel" class="form-back-call__input" placeholder="+375 (код) 111-22-33">
-          
-          <fieldset class="form-back-call__chek">
-            <input id="personData" type="radio" name="person" value="personData">
-            <label for="personData">Согласие на обработку персональных данных</label>
-          </fieldset>
-        
-          <fieldset class="form-back-call__button">
-            <!-- ======= Button Popup Back Call ======= -->
-            <button type="submit" value="Submit" class="button button-primary button-back-call">Заказать звонок
-            </button><!-- ======= End Button Popup Back Call ======= -->  </fieldset>
-          
-        </form><!-- ======= End Form Back Call ======= -->  <!-- ======= Button Close ======= -->
-        <button class="close-button" data-close aria-label="Close reveal" type="button">
-            <span class="close-button__icon" aria-hidden="true">&times;</span>
-        </button><!-- ======= End Button Close ======= --></div><!-- End Popup Back Call -->  <!-- ======= Hero Section ======= -->
-      <section id="hero" class="hero">
-        <div class="hero__offer">
-          <div class="offer">
-            <h2 class="offer__title">Ремонт телевизоров в Ивацевичах</h2>
-            <p class="offer__desc">Решите свою проблему не выходя из дома!</p>
           </div>
-        </div>
-      </section><!-- End Hero Section -->
-      <div class="page__content-container">
-      	<!-- ======= Service Item Table ======= -->
-      	<table class="table-expand unstriped">
-      	  <thead>
-      	    <tr>
-      	      <th>Неисправность</th>
-      	      <th>Возможная причина</th>
-      	      <th>Примечание</th>
-      	      <th>Цена</th>
-      	    </tr>
-      	  </thead>
-      	  <tbody>
-      	    <tr>
-      	      <td data-label="Неисправность">Диагностика телевизора</td>
-      	      <td data-label="Возможная причина"></td>
-      	      <td data-label="Примечание">Время выполнения: 1-2 дня</td>
-      	      <td data-label="Цена">Бесплатно</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Нет изображения</td>
-      	      <td data-label="Возможная причина">Ремонт подсветки или плат матрицы</td>
-      	      <td data-label="Примечание">Время выполнения: 1-2 дня; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 40 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Не включается</td>
-      	      <td data-label="Возможная причина">Ремонт блока питания или основной (main) платы</td>
-      	      <td data-label="Примечание">Время выполнения: 3-7 дней; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 50 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Нет звука</td>
-      	      <td data-label="Возможная причина">Ремонт блока питания или основной (main) платы</td>
-      	      <td data-label="Примечание">Время выполнения: 3-7 дней; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 60 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Перепрошивка (обновление ПО) телевизора</td>
-      	      <td data-label="Возможная причина">Обновление, или восстановление программного обеспечения устройства</td>
-      	      <td data-label="Примечание">Время выполнения: 1-2 дня; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 50 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Замена разъема USB</td>
-      	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
-      	      <td data-label="Примечание">Время выполнения: 2-3 дня; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 35 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Замена разъема HDMI</td>
-      	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
-      	      <td data-label="Примечание">Время выполнения: 2-3 дня; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 35 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Замена/ремонт антенного гнезда</td>
-      	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
-      	      <td data-label="Примечание">Время выполнения: 2-3 дня; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 35 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Ремонт/замена тюнера</td>
-      	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
-      	      <td data-label="Примечание">Время выполнения: 3-7 дней; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 55 руб.</td>
-      	    </tr>
-      	    <tr>
-      	      <td data-label="Неисправность">Ремонт плазменных телевизоров</td>
-      	      <td data-label="Возможная причина">Телевизор выключается самостоятельно Полосы на экране Не включается, индикатор мигает</td>
-      	      <td data-label="Примечание">Время выполнения: 5-12 дней; Гарантия: 4 месяца</td>
-      	      <td data-label="Цена">от 200 руб.</td>
-      	    </tr>
-      	  </tbody>
-      	</table><!-- ======= End Service Item Table ======= --></div>
-      
-      
-      <!-- ======= Footer ======= -->
-      <footer class="footer">
-        <p>&copy; 2023</p>
-      </footer><!-- ======= End Footer ======= -->  </div>
+        </section><!-- End Hero Section --> 
+        <div class="page__content-container">
+        	<!-- ======= Service Item Table ======= -->
+        	<table class="table-expand unstriped">
+        	  <thead>
+        	    <tr>
+        	      <th>Неисправность</th>
+        	      <th>Возможная причина</th>
+        	      <th>Примечание</th>
+        	      <th>Цена</th>
+        	    </tr>
+        	  </thead>
+        	  <tbody>
+        	    <tr>
+        	      <td data-label="Неисправность">Диагностика телевизора</td>
+        	      <td data-label="Возможная причина"></td>
+        	      <td data-label="Примечание">Время выполнения: 1-2 дня</td>
+        	      <td data-label="Цена">Бесплатно</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Нет изображения</td>
+        	      <td data-label="Возможная причина">Ремонт подсветки или плат матрицы</td>
+        	      <td data-label="Примечание">Время выполнения: 1-2 дня; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 40 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Не включается</td>
+        	      <td data-label="Возможная причина">Ремонт блока питания или основной (main) платы</td>
+        	      <td data-label="Примечание">Время выполнения: 3-7 дней; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 50 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Нет звука</td>
+        	      <td data-label="Возможная причина">Ремонт блока питания или основной (main) платы</td>
+        	      <td data-label="Примечание">Время выполнения: 3-7 дней; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 60 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Перепрошивка (обновление ПО) телевизора</td>
+        	      <td data-label="Возможная причина">Обновление, или восстановление программного обеспечения устройства</td>
+        	      <td data-label="Примечание">Время выполнения: 1-2 дня; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 50 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Замена разъема USB</td>
+        	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
+        	      <td data-label="Примечание">Время выполнения: 2-3 дня; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 35 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Замена разъема HDMI</td>
+        	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
+        	      <td data-label="Примечание">Время выполнения: 2-3 дня; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 35 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Замена/ремонт антенного гнезда</td>
+        	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
+        	      <td data-label="Примечание">Время выполнения: 2-3 дня; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 35 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Ремонт/замена тюнера</td>
+        	      <td data-label="Возможная причина">Ремонт основной (main) платы</td>
+        	      <td data-label="Примечание">Время выполнения: 3-7 дней; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 55 руб.</td>
+        	    </tr>
+        	    <tr>
+        	      <td data-label="Неисправность">Ремонт плазменных телевизоров</td>
+        	      <td data-label="Возможная причина">Телевизор выключается самостоятельно Полосы на экране Не включается, индикатор мигает</td>
+        	      <td data-label="Примечание">Время выполнения: 5-12 дней; Гарантия: 4 месяца</td>
+        	      <td data-label="Цена">от 200 руб.</td>
+        	    </tr>
+        	  </tbody>
+        	</table><!-- ======= End Service Item Table ======= --></div>
+        
+        
+        <!-- ======= Footer ======= -->
+        <footer class="footer">
+          <p>&copy; 2023</p>
+        </footer><!-- ======= End Footer ======= -->    </div>
+    
+  </div><!-- ======= End Page Off-canvas wrapp ======= -->
 
 <script src="assets/js/app.js"></script>
 </body>
