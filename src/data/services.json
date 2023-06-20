@@ -19,6 +19,15 @@
 		{
 			"icon": "assets/img/icons/services/Smartphone-1.svg",
     	"title": "Смартфон"
+		},
+		{
+			"icon": "assets/img/icons/services/washing.svg",
+    	"title": "Стиральная",
+    	"subtitle": "машина"
+		},
+		{
+			"icon": "assets/img/icons/services/Crain-Truck.svg",
+    	"title": "Эвакуатор"
 		}
 	]
 }

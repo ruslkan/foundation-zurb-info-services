@@ -1,14 +1,12 @@
 <!-- ======= Top Bar ======= -->
 <div class="top-bar">
-  <div class="top-bar__icon-hamburger">
+  <div class="top-bar__icon-hamburger" data-open="offCanvasLeft">
     {{> icon-hamburger}}
   </div>
   <div class="top-bar__contact-phone">
     {{> contact-phone}}
   </div>
-  {{#ifpage 'index'}}
   <div class="top-bar__button-back-call" data-open="popupBackCall">
     {{> button-back-call}}
   </div>
-  {{/ifpage}}
 </div><!-- ======= End Top Bar ======= -->

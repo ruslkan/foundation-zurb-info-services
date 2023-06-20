@@ -2,24 +2,65 @@
    TOP BAR
    ======= */
 .top-bar {
-	@include xy-grid;
 	background: none;
 
 	&__icon-hamburger {
-		@include xy-cell-size(
-			$size: 15%
-			);
+		@include breakpoint(small) {
+			@include xy-cell(3);
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(2);
+		}
+		@include breakpoint(large, xlarge up) {
+			@include xy-cell(3);
+		}
 	}
 
 	&__contact-phone {
-		@include xy-cell-base(auto);
-		@include flex;
-		@include flex-align(
-			$x: center,
-			$y: null);
+		@include xy-grid;
+		@include breakpoint(small) {
+			@include xy-cell(9);
+			@include flex-align(
+				$x: right,
+				$y: middle
+			);
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(6);
+			@include flex-align(
+				$x: center,
+				$y: middle
+			);
+		}
+		@include breakpoint(large, xlarge up) {
+			@include xy-cell(6);
+			@include flex-align(
+				$x: center,
+				$y: middle
+			);
+		}
 	}
 
 	&__button-back-call {
-		@include xy-cell-base(shrink);
+		@include xy-grid;
+		@include breakpoint(small) {
+			@include xy-cell(12);
+			@include flex-align(
+				$x: center,
+				$y: middle
+			);
+			@include margin(2, null, null, null);
+		}
+		@include breakpoint(medium) {
+			@include xy-cell(4);
+			@include flex-align(
+				$x: right,
+				$y: middle
+			);
+			@include margin(0, null, null, null);
+		}
+		@include breakpoint(large, xlarge up) {
+			@include xy-cell(3);
+		}
 	}
 } 

@@ -2,16 +2,26 @@
 //  contact-phone
 //  ------------- */
 .contact-phone {
-	@include flex;
+	@include xy-grid;
 
 	ul {
 		background: none;
 	}
 	
 	&__icon {
-		width: 25px;
-    height: 30px;
-    fill: $text-color-primary;
+		@include breakpoint(small) {
+			width: 15px;
+    	height: 20px;
+		}
+		@include breakpoint(medium) {
+			width: 25px;
+    	height: 30px;
+		}
+		@include breakpoint(large, xlarge up) {
+			width: 25px;
+    	height: 30px;
+		}
+    fill: $brand-color;
     @include xy-cell-base(shrink);
     @include flex-align-self(middle);
 
@@ -30,11 +40,20 @@
 	}
 
 	&__link {
-		font-size: rem-calc(22px);
+		@include breakpoint(small) {
+			font-size: rem-calc(16px);
+		}
+		@include breakpoint(medium) {
+			font-size: rem-calc(22px);
+		}
+		@include breakpoint(large, xlarge up) {
+			font-size: rem-calc(22px);
+		}
 		@include font-bold($weight:600);
 		color: $text-color-primary;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $brand-color-lighter;
 			filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
 		}

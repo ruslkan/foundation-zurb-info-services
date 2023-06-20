@@ -10,9 +10,4 @@
   @include border-radius(
     $radius:15px
   );
-
-  &__icon {
-    width: 10px;
-    fill: $text-color-primary;
-  }
 }

@@ -7,14 +7,25 @@
     <title>Foundation for My Sites</title>
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
-<body>
-  <div class="page">
-    <div class="page__header">
-      {{> header}}
+<body class="page">
+
+  <!-- ======= Page Off-canvas wrap ======= -->
+  <div class="page__off-canvas">
+    
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+      {{> button-close}}
+      {{> nav}}
     </div>
-      {{> body}}
-      {{> footer}}
-  </div>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="page__header">
+        {{> header}}
+      </div>
+        {{> body}}
+        {{> footer}}
+    </div>
+    
+  </div><!-- ======= End Page Off-canvas wrapp ======= -->
 
 <script src="{{root}}assets/js/app.js"></script>
 </body>

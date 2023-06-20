@@ -11,7 +11,8 @@
   stroke: $brand-color;
   stroke-width: 2px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     stroke: $brand-color-lighter;
     filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
   }

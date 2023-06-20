@@ -4,7 +4,6 @@
 $pageWidth: 1920px;
 
 body {
-  //background-color: scale-color($bg-color, $lightness:-20%);
   overflow-x: hidden;
   height: auto;
   background-image: none;
@@ -40,9 +39,7 @@ h6 {
   }
 
   &__content-container {
-    @include xy-grid-container(
-      $padding: 0
-    );
+    @include xy-grid-container;
   }
 
   &__header {
@@ -55,4 +52,16 @@ h6 {
     z-index: 997;
     width: 100%;
   }
+
+  &__off-canvas {
+    @include off-canvas-basics;
+  }
+}
+
+.off-canvas {
+  background-color: $brand-color;
+  filter: drop-shadow(0.15rem 0.15rem 0.6rem $brand-color);
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -24,8 +24,21 @@
   &__offer {
    	@include xy-grid-container;
    	@include xy-grid;
-   	@include margin(5, null, null, null);
+   	text-align: center;
+   	@include flex-align(
+    	$x: center
+    );
+   	@include breakpoint(small) {
+			@include margin(10, null, null, null);
+		}
+		@include breakpoint(medium) {
+			@include margin(5, null, null, null);
+		}
+		@include breakpoint(large, xlarge up) {
+			@include margin(5, null, null, null);
+		}
    	z-index: 5;
+   	width: 100%;
    }
 
 	&__services {
@@ -34,12 +47,30 @@
     @include flex-align(
     	$x: center
     );
-    @include position(
-   		$position: absolute,
-   		$top: 28,
-   		$right: 0,
-   		$left: 0,
-   	);
+   	@include breakpoint(small) {
+			@include position(
+   			$position: absolute,
+   			$top: 22,
+   			$right: 0,
+   			$left: 0,
+   		);
+		}
+		@include breakpoint(medium) {
+			@include position(
+   			$position: absolute,
+   			$top: 22,
+   			$right: 0,
+   			$left: 0,
+   		);
+		}
+		@include breakpoint(large, xlarge up) {
+			@include position(
+   			$position: absolute,
+   			$top: 28,
+   			$right: 0,
+   			$left: 0,
+   		);
+		}
    	z-index: 7;
 	}
 }
@@ -89,14 +120,16 @@
 	&__desc {
 		@include breakpoint(small) {
 			font-size: rem-calc(14);
+			padding-top: 15px;
 		}
 		@include breakpoint(medium) {
 			font-size: rem-calc(18);
+			padding-top: 35px;
 		}
 		@include breakpoint(large, xlarge up) {
 			font-size: rem-calc(22);
+			padding-top: 35px;
 		}
-		//padding-top: 35px;
 		@include font-bold(
 			$weight: 600
 		);

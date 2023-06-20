@@ -2,7 +2,6 @@
 //  button-primary
 //  -------------- */
 .button-primary {
-  font-size: rem-calc(16px);
   @include font-bold($weight:600);
   @include button-style(
     $background: $brand-color,

@@ -41,7 +41,6 @@ $table-expand-label-bg: $light-gray;
     tr + tr {
       margin-top: $table-expand-bottom-gap;
     }
-    /* Get table cells to act like rows */
 
     td {
       border: none;
@@ -51,6 +50,7 @@ $table-expand-label-bg: $light-gray;
       border-bottom: $table-expand-border;
       padding-left: 50%;
       position: relative;
+      font-size: rem-calc(12px);
 
       &:before {
         content: attr(data-label);
