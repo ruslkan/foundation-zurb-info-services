@@ -1,17 +1,10 @@
 <!-- ======= Navigation ======= -->
-<nav class="navi">
-  <ul class="vertical menu navi__list">
-    <li class="navi__item">
-      <a class="navi__link" href="#">О нас</a>
+<nav class="nav">
+  <ul class="vertical menu nav__list">
+    {{#each nav.list}}
+    <li class="nav__item">
+      <a href="{{ link }}" class="nav__link">{{ text }}</a>
     </li>
-    <li class="navi__item">
-      <a class="navi__link" href="#">Опять о нас</a>
-    </li>
-    <li class="navi__item">
-      <a class="navi__link" href="#">Снова о нас</a>
-    </li>
-    <li class="navi__item">
-      <a class="navi__link" href="#">Четвертый раз о нас</a>
-    </li>
+    {{/each}}
   </ul>
 </nav><!-- ======= End Navigation ======= -->

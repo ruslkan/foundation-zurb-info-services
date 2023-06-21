@@ -33,9 +33,9 @@
 			);
 		}
 		@include breakpoint(large, xlarge up) {
-			@include xy-cell(6);
+			@include xy-cell(9);
 			@include flex-align(
-				$x: center,
+				$x: right,
 				$y: middle
 			);
 		}

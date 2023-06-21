@@ -8,7 +8,7 @@ $table-expand-label-bg: $light-gray;
 
 .table-expand {
   border-collapse: collapse;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 5rem;
 
   &.unstriped tbody {
@@ -24,6 +24,7 @@ $table-expand-label-bg: $light-gray;
   th,
   td {
     border: $table-expand-border;
+    padding: 0.3rem 0.425rem 0.425rem;
   }
 
   @media screen and (max-width: $table-expand-stack-point) {

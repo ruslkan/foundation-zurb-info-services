@@ -1,0 +1,23 @@
+{
+  "list": [
+  {
+    "link": "/",
+    "text": "Главная"
+  },
+  {
+    "link": "#",
+    "text": "О нас"
+  },
+  {
+    "link": "#workingProcess",
+    "text": "Преимущества"
+  },
+  {
+    "link": "#action",
+    "text": "Акция"
+  },
+  {
+    "link": "#testimonial",
+    "text": "Отзывы"
+  }]
+}
